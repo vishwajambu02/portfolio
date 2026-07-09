@@ -160,7 +160,7 @@ export default function Hero({ onScrollToSection }: HeroProps) {
               <div className="absolute inset-0 z-10 overflow-hidden">
 
               <img
-  src="https://your-image-url.com/profile.jpg"
+  src="WhatsApp Image 2025-08-14 at 17.34.06_44bc7bee"
   alt={PERSONAL_INFO.name}
   className="w-full h-full object-cover scale-105 group-hover/profile:scale-115 transition-transform duration-700 contrast-110 brightness-100"
 />         
