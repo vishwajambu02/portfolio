@@ -120,26 +120,7 @@ export default function App() {
                 </div>
               </button>
 
-            <div className="p-4 flex flex-col gap-2">
-  {[
-    { id: "hero", label: "Home" },
-    { id: "skills", label: "Skills" },
-    { id: "projects", label: "Projects" },
-    { id: "education", label: "Education" }
-  ].map((item) => (
-    <button
-      key={item.id}
-      onClick={() => scrollToSection(item.id)}
-      className={`w-full px-4 py-3 rounded-xl text-left text-xs font-mono tracking-wide transition-all ${
-        activeSection === item.id
-          ? "text-teal-400 bg-teal-950/20 border border-teal-500/10"
-          : "text-slate-400 hover:text-white hover:bg-slate-900/60"
-      }`}
-    >
-      {item.label}
-    </button>
-  ))}
-            </div>
+          
 
 </div>   {/* ← THIS WAS MISSING */}
 
@@ -205,6 +186,7 @@ export default function App() {
                       {item.label}
                     </button>
                   ))}
+                </div>
               </motion.div>
             )}
           </AnimatePresence>
