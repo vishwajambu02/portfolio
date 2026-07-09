@@ -127,7 +127,6 @@ export default function App() {
                   { id: "skills", label: "Skills" },
                   { id: "projects", label: "Projects" },
                   { id: "education", label: "Education" },
-                  { id: "resume", label: "Contact & CV" }
                 ].map((item) => (
                   <button
                     key={item.id}
