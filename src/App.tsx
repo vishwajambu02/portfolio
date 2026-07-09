@@ -120,28 +120,29 @@ export default function App() {
                 </div>
               </button>
 
-              {/* Desktop Nav Actions */}
-              <nav className="hidden md:flex items-center gap-1">
-                {[
-                  { id: "hero", label: "Home" },
-                  { id: "skills", label: "Skills" },
-                  { id: "projects", label: "Projects" },
-                  { id: "education", label: "Education" },
-                ].map((item) => (
-                  <button
-                    key={item.id}
-                    onClick={() => scrollToSection(item.id)}
-                    className={`px-4 py-2 rounded-xl text-xs font-mono tracking-wide transition-all cursor-pointer ${
-                      activeSection === item.id
-                        ? "text-teal-400 bg-teal-950/20 border border-teal-500/10"
-                        : "text-slate-400 hover:text-white border border-transparent hover:bg-slate-900/40"
-                    }`}
-                  >
-                    {item.label}
-                  </button>
-                ))}
-              </nav>
+            <div className="p-4 flex flex-col gap-2">
+  {[
+    { id: "hero", label: "Home" },
+    { id: "skills", label: "Skills" },
+    { id: "projects", label: "Projects" },
+    { id: "education", label: "Education" }
+  ].map((item) => (
+    <button
+      key={item.id}
+      onClick={() => scrollToSection(item.id)}
+      className={`w-full px-4 py-3 rounded-xl text-left text-xs font-mono tracking-wide transition-all ${
+        activeSection === item.id
+          ? "text-teal-400 bg-teal-950/20 border border-teal-500/10"
+          : "text-slate-400 hover:text-white hover:bg-slate-900/60"
+      }`}
+    >
+      {item.label}
+    </button>
+  ))}
 
+</div>   {/* ← THIS WAS MISSING */}
+
+</motion.div>
               {/* Desktop Direct Resume Modal Toggle inside Nav */}
               <div className="hidden md:flex items-center gap-3">
                 <a
