@@ -1,3 +1,5 @@
+
+```tsx
 import React, { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "motion/react";
 import { Menu, X, Terminal, Github, Linkedin, Mail } from "lucide-react";
@@ -120,12 +122,7 @@ export default function App() {
                 </div>
               </button>
 
-          
-
-</div>   {/* ← THIS WAS MISSING */}
-
-</motion.div>
-              {/* Desktop Direct Resume Modal Toggle inside Nav */}
+              {/* Desktop Social Grid / Navigation links */}
               <div className="hidden md:flex items-center gap-3">
                 <a
                   href={PERSONAL_INFO.github}
@@ -254,3 +251,5 @@ export default function App() {
     </div>
   );
 }
+
+```
