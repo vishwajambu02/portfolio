@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "motion/react";
-import { Menu, X, Terminal, FileText, Sparkles, Github, Linkedin, Mail } from "lucide-react";
+import { Menu, X, Terminal, Github, Linkedin, Mail } from "lucide-react";
 import SplashIntro from "./components/SplashIntro";
 import BackgroundEffects from "./components/BackgroundEffects";
 import Hero from "./components/Hero";
@@ -162,13 +162,6 @@ export default function App() {
                 >
                   <Linkedin size={15} />
                 </a>
-                <button
-                  onClick={() => scrollToSection("resume")}
-                  className="px-4 py-2.5 rounded-xl text-xs font-semibold text-slate-950 bg-teal-400 hover:bg-teal-300 transition-all cursor-pointer flex items-center gap-1.5 shadow-lg shadow-teal-500/20 hover:shadow-teal-400/30 hover:scale-105 active:scale-95"
-                >
-                  <FileText size={13} />
-                  <span>Interactive CV</span>
-                </button>
               </div>
 
               {/* Mobile menu trigger */}
