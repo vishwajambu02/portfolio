@@ -79,9 +79,9 @@ export default function App() {
       {/* Premium Top Scroll Progress Bar */}
       <div className="fixed top-0 left-0 right-0 h-[3px] bg-slate-950/20 z-50 overflow-hidden pointer-events-none">
         <div 
-          className="h-full bg-gradient-to-r from-teal-400 via-cyan-400 to-indigo-500 origin-left transition-transform duration-100 ease-out"
-          style={{ transform: `scaleX(${scrollProgress})` }}
-        />
+  className="h-full bg-gradient-to-r from-teal-400 via-cyan-400 to-indigo-500 origin-left transition-transform duration-100 ease-out"
+  style={{ transform: "scaleX(" + scrollProgress + ")" }}
+/>
       </div>
 
       {/* Front Flash Splash Screen Introduction */}
