@@ -97,13 +97,15 @@ export default function Hero({ onScrollToSection }: HeroProps) {
               <span>Explore My Work</span>
               <ChevronRight size={16} className="group-hover:translate-x-1 transition-transform" />
             </button>
-            <button
-              onClick={() => onScrollToSection("resume")}
-              className="group px-6 py-4 rounded-xl font-bold text-sm text-slate-300 hover:text-teal-300 bg-slate-950/80 border border-slate-900 hover:border-teal-500/30 shadow-lg hover:shadow-[0_0_20px_rgba(20,184,166,0.1)] hover:scale-[1.03] active:scale-[0.97] transition-all duration-300 flex items-center justify-center gap-2 cursor-pointer"
-            >
-              <FileText size={16} className="text-indigo-400 group-hover:text-teal-400 transition-colors" />
-              <span>Interactive Resume</span>
-            </button>
+            <a
+  href="/resume.pdf"
+  download
+  className="group px-6 py-4 rounded-xl font-bold text-sm text-slate-300 hover:text-teal-300 bg-slate-950/80 border border-slate-900 hover:border-teal-500/30 shadow-lg hover:shadow-[0_0_20px_rgba(20,184,166,0.1)] hover:scale-[1.03] active:scale-[0.97] transition-all duration-300 flex items-center justify-center gap-2"
+>
+  <FileText size={16} className="text-indigo-400 group-hover:text-teal-400 transition-colors" />
+  <span>Download Resume</span>
+  <Download size={16} />
+</a>
           </motion.div>
 
           {/* Quick Stats Panel */}
