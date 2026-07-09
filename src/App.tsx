@@ -211,15 +211,6 @@ export default function App() {
                       {item.label}
                     </button>
                   ))}
-                  <div className="h-[1px] bg-slate-900 my-2" />
-                  <button
-                    onClick={() => scrollToSection("resume")}
-                    className="w-full px-4 py-3 rounded-xl text-xs font-semibold text-slate-950 bg-teal-400 hover:bg-teal-300 transition-all flex items-center justify-center gap-2 shadow-lg shadow-teal-500/10"
-                  >
-                    <FileText size={14} />
-                    <span>Interactive Resume Hub</span>
-                  </button>
-                </div>
               </motion.div>
             )}
           </AnimatePresence>
