@@ -158,12 +158,11 @@ export default function Hero({ onScrollToSection }: HeroProps) {
 
               {/* Developer Profile Picture */}
               <div className="absolute inset-0 z-10 overflow-hidden">
-                <img
-                  src="WhatsApp Image 2025-08-14 at 17.34.06_44bc7bee"
-                  alt={PERSONAL_INFO.name}
-                  referrerPolicy="no-referrer"
-                  className="w-full h-full object-cover scale-105 group-hover/profile:scale-115 transition-transform duration-700 contrast-110 brightness-100"
-                />
+<img
+  src={profileImage}
+  alt={PERSONAL_INFO.name}
+  className="w-full h-full object-cover scale-105 group-hover/profile:scale-115 transition-transform duration-700 contrast-110 brightness-100"
+/>
                 {/* Neon gradient lens filter */}
                 <div className="absolute inset-0 bg-gradient-to-tr from-teal-950/40 via-transparent to-indigo-950/40 mix-blend-overlay z-15" />
                 <div className="absolute inset-0 bg-slate-950/10 hover:bg-transparent transition-colors duration-500 z-16" />
