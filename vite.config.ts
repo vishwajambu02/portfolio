@@ -8,6 +8,9 @@ export default defineConfig({
     loader: 'tsx',
     include: /src\/.*\.tsx?$/,
   },
-  // Ensure assets are compiled relative to the deployment root
-  base: './', 
+  base: '/',
+  build: {
+    cssCodeSplit: false,
+    outDir: 'dist',
+  }
 });
