@@ -1,5 +1,3 @@
-
-```tsx
 import React, { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "motion/react";
 import { Menu, X, Terminal, Github, Linkedin, Mail } from "lucide-react";
@@ -79,9 +77,9 @@ export default function App() {
       {/* Premium Top Scroll Progress Bar */}
       <div className="fixed top-0 left-0 right-0 h-[3px] bg-slate-950/20 z-50 overflow-hidden pointer-events-none">
         <div 
-  className="h-full bg-gradient-to-r from-teal-400 via-cyan-400 to-indigo-500 origin-left transition-transform duration-100 ease-out"
-  style={{ transform: "scaleX(" + scrollProgress + ")" }}
-/>
+          className="h-full bg-gradient-to-r from-teal-400 via-cyan-400 to-indigo-500 origin-left transition-transform duration-100 ease-out"
+          style={{ transform: "scaleX(" + scrollProgress + ")" }}
+        />
       </div>
 
       {/* Front Flash Splash Screen Introduction */}
@@ -100,11 +98,11 @@ export default function App() {
 
           {/* Sticky Glassmorphic Header Navigation */}
           <header 
-            className={`fixed top-0 left-0 right-0 z-40 transition-all duration-300 ${
+            className={
               scrolled 
-                ? "bg-slate-950/70 border-b border-slate-900/80 backdrop-blur-md py-4 shadow-lg shadow-black/20" 
-                : "bg-transparent py-6"
-            }`}
+                ? "fixed top-0 left-0 right-0 z-40 transition-all duration-300 bg-slate-950/70 border-b border-slate-900/80 backdrop-blur-md py-4 shadow-lg shadow-black/20" 
+                : "fixed top-0 left-0 right-0 z-40 transition-all duration-300 bg-transparent py-6"
+            }
           >
             <div className="max-w-6xl mx-auto px-4 md:px-8 flex items-center justify-between">
               
@@ -174,11 +172,11 @@ export default function App() {
                     <button
                       key={item.id}
                       onClick={() => scrollToSection(item.id)}
-                      className={`w-full px-4 py-3 rounded-xl text-left text-xs font-mono tracking-wide transition-all ${
+                      className={
                         activeSection === item.id
-                          ? "text-teal-400 bg-teal-950/20 border border-teal-500/10"
-                          : "text-slate-400 hover:text-white hover:bg-slate-900/60"
-                      }`}
+                          ? "w-full px-4 py-3 rounded-xl text-left text-xs font-mono tracking-wide transition-all text-teal-400 bg-teal-950/20 border border-teal-500/10"
+                          : "w-full px-4 py-3 rounded-xl text-left text-xs font-mono tracking-wide transition-all text-slate-400 hover:text-white hover:bg-slate-900/60"
+                      }
                     >
                       {item.label}
                     </button>
@@ -232,7 +230,7 @@ export default function App() {
                   <Linkedin size={16} />
                 </a>
                 <a
-                  href={`mailto:${PERSONAL_INFO.email}`}
+                  href={"mailto:" + PERSONAL_INFO.email}
                   className="p-2.5 rounded-xl bg-slate-900/40 border border-slate-900 hover:border-slate-800 hover:text-white transition-all cursor-pointer"
                   title="Direct Email"
                 >
@@ -251,5 +249,3 @@ export default function App() {
     </div>
   );
 }
-
-```
