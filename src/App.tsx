@@ -120,7 +120,29 @@ export default function App() {
                 </div>
               </button>
 
-              {/* Desktop Social Grid / Navigation links */}
+              {/* Desktop Direct Page Links Navigation */}
+              <nav className="hidden md:flex items-center gap-1.5">
+                {[
+                  { id: "hero", label: "Home" },
+                  { id: "skills", label: "Skills" },
+                  { id: "projects", label: "Projects" },
+                  { id: "education", label: "Education" }
+                ].map((item) => (
+                  <button
+                    key={item.id}
+                    onClick={() => scrollToSection(item.id)}
+                    className={
+                      activeSection === item.id
+                        ? "px-4 py-2 rounded-xl text-xs font-mono tracking-wide transition-all text-teal-400 bg-teal-950/20 border border-teal-500/10 cursor-pointer"
+                        : "px-4 py-2 rounded-xl text-xs font-mono tracking-wide transition-all text-slate-400 hover:text-white hover:bg-slate-900/40 cursor-pointer"
+                    }
+                  >
+                    {item.label}
+                  </button>
+                ))}
+              </nav>
+
+              {/* Desktop Social Grid Layout links */}
               <div className="hidden md:flex items-center gap-3">
                 <a
                   href={PERSONAL_INFO.github}
