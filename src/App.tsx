@@ -139,6 +139,7 @@ export default function App() {
       {item.label}
     </button>
   ))}
+            </div>
 
 </div>   {/* ← THIS WAS MISSING */}
 
@@ -190,8 +191,7 @@ export default function App() {
                     { id: "hero", label: "Home" },
                     { id: "skills", label: "Skills" },
                     { id: "projects", label: "Projects" },
-                    { id: "education", label: "Education" },
-                    { id: "resume", label: "Contact & CV" }
+                    { id: "education", label: "Education" }
                   ].map((item) => (
                     <button
                       key={item.id}
