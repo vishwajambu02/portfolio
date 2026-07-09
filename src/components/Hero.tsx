@@ -159,7 +159,7 @@ export default function Hero({ onScrollToSection }: HeroProps) {
               {/* Developer Profile Picture */}
               <div className="absolute inset-0 z-10 overflow-hidden">
                 <img
-                  src="https://images.unsplash.com/photo-1566492031773-4f4e44671857?auto=format&fit=crop&q=80&w=600&h=600"
+                  src="WhatsApp Image 2025-08-14 at 17.34.06_44bc7bee"
                   alt={PERSONAL_INFO.name}
                   referrerPolicy="no-referrer"
                   className="w-full h-full object-cover scale-105 group-hover/profile:scale-115 transition-transform duration-700 contrast-110 brightness-100"
