@@ -1,235 +1,188 @@
-
-# 🚀 Vishwa Jambu | AI-Powered Developer Portfolio
-
 <div align="center">
 
-![Portfolio Banner](https://img.shields.io/badge/Portfolio-Live-00E5FF?style=for-the-badge)
+# 🚀 Vishwa Jambu — Developer Portfolio
 
-### 💻 Full-Stack Developer | AI Solutions Engineer | B.Tech CSE Student
+### Full-Stack Developer · AI Solutions Engineer · B.Tech CSE Student
 
-Building modern, scalable, and AI-powered web applications with beautiful user experiences.
+A premium, dark-themed, animation-rich developer portfolio built with React, TypeScript, and an integrated AI assistant.
 
-🌐 **Live Website:** https://portfolio-lyqp.onrender.com
+[![Live Site](https://img.shields.io/badge/Live-Demo-14b8a6?style=for-the-badge&logo=vercel&logoColor=white)](https://portfolio-lyqp.onrender.com)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg?style=for-the-badge)](LICENSE)
+[![Made with React](https://img.shields.io/badge/React-19-61DAFB?style=for-the-badge&logo=react&logoColor=black)](https://react.dev)
+[![TypeScript](https://img.shields.io/badge/TypeScript-5.8-3178C6?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
+
+[View Demo](https://portfolio-lyqp.onrender.com) · [Report Bug](https://github.com/vishwajambu02/portfolio/issues) · [Request Feature](https://github.com/vishwajambu02/portfolio/issues)
 
 </div>
 
 ---
 
-# ✨ About
+## 📖 About The Project
 
-This is my personal portfolio website built to showcase my skills, projects, education, achievements, and technical journey as a Full-Stack Developer.
+This repository powers my personal developer portfolio — designed to showcase my projects, technical skills, and educational background through a premium, futuristic interface. It features smooth motion-driven animations, a fully responsive layout, and a built-in AI assistant that can answer questions about my background in real time.
 
-The website features a premium futuristic UI inspired by modern developer portfolios with smooth animations, responsive layouts, interactive components, and a clean user experience.
-
----
-
-# 🎯 Features
-
-- 🌟 Premium futuristic UI/UX
-- ⚡ Smooth animations using Motion
-- 📱 Fully Responsive Design
-- 👨‍💻 Professional Hero Section
-- 🛠️ Skills Showcase
-- 📂 Interactive Project Gallery
-- 🎓 Education Timeline
-- 📄 Resume Download
-- 📞 Contact Section
-- 📧 One Click Email
-- 📍 Location Details
-- 🌙 Dark Theme
-- 🚀 Optimized Performance
-- 🎨 Glassmorphism Design
-- 💡 Modern Developer Portfolio Layout
+Built as a full-stack application (not just a static site), it pairs a React/Vite frontend with an Express backend that powers the AI chat integration.
 
 ---
 
-# 🛠️ Tech Stack
+## ✨ Features
 
-## Frontend
-
-- React
-- TypeScript
-- Tailwind CSS
-- Vite
-- Motion
-- Lucide React
-
-## Deployment
-
-- Render
-- GitHub
+| | |
+|---|---|
+| 🌌 **Dark, Futuristic UI** | Glassmorphism panels, gradient accents, and a cinematic splash intro |
+| ⚡ **Fluid Animations** | Powered by Motion (Framer Motion) throughout every section |
+| 🤖 **AI Chat Assistant** | Ask questions about my skills, projects, and background — answered live via AI |
+| 📱 **Fully Responsive** | Optimized layouts from mobile to ultra-wide desktop |
+| 🗂️ **Interactive Project Gallery** | Filterable, detailed showcases of featured work |
+| 🎓 **Education & Certification Timeline** | Structured, easy-to-scan academic history |
+| 📄 **One-Click Resume Download** | Direct PDF resume access |
+| 🌠 **Animated Particle Background** | Subtle depth without sacrificing performance |
+| 🎯 **SEO & Performance Optimized** | Fast loads via Vite's production build pipeline |
 
 ---
 
-# 📂 Project Structure
+## 🛠️ Tech Stack
+
+**Frontend**
+- [React 19](https://react.dev) + [TypeScript](https://www.typescriptlang.org/)
+- [Vite](https://vite.dev) — build tooling & dev server
+- [Tailwind CSS 4](https://tailwindcss.com) — utility-first styling
+- [Motion](https://motion.dev) — animation engine
+- [Lucide React](https://lucide.dev) — icon system
+
+**Backend**
+- [Express](https://expressjs.com) — API server
+- [Google Gemini API](https://ai.google.dev) — AI chat assistant
+
+**Tooling & Deployment**
+- [esbuild](https://esbuild.github.io) — server bundling
+- [Render](https://render.com) — hosting
+
+---
+
+## 📂 Project Structure
 
 ```
 portfolio/
-│
 ├── public/
-│   ├── resume.pdf
-│   └── profile.jpg
-│
+│   ├── profile.jpg          # Profile photo
+│   └── resume.pdf           # Downloadable resume
 ├── src/
-│   ├── assets/
-│   ├── components/
-│   ├── data/
-│   ├── hooks/
-│   ├── pages/
+│   ├── components/          # UI sections (Hero, Skills, Projects, etc.)
+│   ├── data.ts              # ⭐ Central content file — edit this to update your info
+│   ├── types.ts             # Shared TypeScript types
 │   ├── App.tsx
 │   └── main.tsx
-│
-├── package.json
+├── server.ts                 # Express server + Gemini AI chat API
 ├── vite.config.ts
+├── package.json
 └── README.md
 ```
 
 ---
 
-# 🚀 Installation
+## 🚀 Getting Started
 
-Clone the repository
+### Prerequisites
+- [Node.js](https://nodejs.org/) 18+
+- npm
+
+### Installation
 
 ```bash
+# Clone the repository
 git clone https://github.com/vishwajambu02/portfolio.git
-```
-
-Move into the project
-
-```bash
 cd portfolio
-```
 
-Install dependencies
-
-```bash
+# Install dependencies
 npm install
+
+# Set up environment variables
+cp .env.example .env
+# then add your GEMINI_API_KEY inside .env
 ```
 
-Run development server
+### Running Locally
 
 ```bash
 npm run dev
 ```
 
-Build for production
+Visit `http://localhost:3000` in your browser.
+
+### Building for Production
 
 ```bash
 npm run build
+npm start
 ```
 
 ---
 
-# 📸 Preview
+## 🔐 Environment Variables
 
-## Home Page
-
-- Premium Hero Section
-- Interactive Developer Profile
-- Modern Navigation
-
-## Skills
-
-- Frontend
-- Backend
-- AI
-- Database
-- Tools
-
-## Projects
-
-Featured Full Stack Projects
-
-- SwachhSpot
-- DailyDrape
-- AI News Platform
-
-## Contact
-
-- Email
-- Phone
-- Resume
-- GitHub
-- LinkedIn
+| Variable | Description | Required |
+|---|---|---|
+| `GEMINI_API_KEY` | API key for the AI chat assistant — get one free at [aistudio.google.com/apikey](https://aistudio.google.com/apikey) | Optional (chat falls back gracefully without it) |
+| `NODE_ENV` | Set to `production` when deploying | Recommended for deployment |
 
 ---
 
-# 🌍 Live Demo
+## ☁️ Deployment
 
-👉 https://portfolio-lyqp.onrender.com
+This project deploys cleanly to [Render](https://render.com) as a Node web service:
 
----
-
-# 👨‍💻 About Me
-
-Hi!
-
-I'm **Vishwa Jambu**, a passionate Computer Science Engineering student at **Parul University**.
-
-I enjoy building beautiful, scalable, AI-powered web applications and solving real-world problems through technology.
-
-My interests include
-
-- Full Stack Development
-- Artificial Intelligence
-- UI/UX Design
-- Backend Engineering
-- Cloud Technologies
+| Setting | Value |
+|---|---|
+| Build Command | `npm install && npm run build` |
+| Start Command | `npm start` |
+| Environment Variables | `GEMINI_API_KEY`, `NODE_ENV=production` |
 
 ---
 
-# 📫 Connect With Me
+## 🗺️ Sections Overview
 
-📧 Email
-
-vishwajambu66@gmail.com
-
-📍 Location
-
-Vadodara, Gujarat, India
-
-GitHub
-
-https://github.com/vishwajambu02
-
-LinkedIn
-
-(Add your LinkedIn URL here)
+- **Hero** — Introduction, quick stats, and contact shortcuts
+- **Skills** — Categorized technical skill set
+- **Projects** — Featured full-stack builds with tech stack breakdowns
+- **Education** — Academic timeline and certifications
+- **AI Assistant** — Floating chat widget for interactive Q&A
+- **Contact** — Direct email, phone, and social links
 
 ---
 
-# 📈 Future Improvements
+## 📈 Roadmap
 
-- AI Chat Assistant
-- Blog Section
-- Visitor Analytics Dashboard
-- Project Filtering
-- Theme Switcher
-- Multi-language Support
-- Certifications Section
-- GitHub Contribution Graph
-- AI Resume Analyzer
+- [ ] Blog / writing section
+- [ ] Visitor analytics dashboard
+- [ ] Light/dark theme switcher
+- [ ] Project filtering by tech stack
+- [ ] GitHub contribution graph embed
+- [ ] Multi-language support
 
 ---
 
-# ⭐ Support
+## 👨‍💻 About Me
 
-If you like this project, don't forget to ⭐ star the repository.
+I'm **Vishwa Jambu**, a B.Tech Computer Science & Engineering student at Parul University, Vadodara. I build AI-integrated, full-stack web applications with a strong focus on clean architecture and premium UI/UX design.
+
+- 🌐 Portfolio: [portfolio-lyqp.onrender.com](https://portfolio-lyqp.onrender.com)
+- 💼 GitHub: [@vishwajambu02](https://github.com/vishwajambu02)
+- 🔗 LinkedIn: [Vishwa Jambu](https://linkedin.com/in/vishwa-jambu-7a007039b/)
+- 📧 Email: vishwajambu66@gmail.com
 
 ---
 
-# 📄 License
+## 📄 License
 
-This project is licensed under the MIT License.
+Distributed under the MIT License. See `LICENSE` for more information.
 
 ---
 
 <div align="center">
 
-### Thanks for visiting my portfolio ❤️
+### If you like this project, consider giving it a ⭐
 
-**Designed & Developed by Vishwa Jambu**
-
-© 2026 All Rights Reserved
+**Designed & Developed by Vishwa Jambu** · © 2026
 
 </div>
