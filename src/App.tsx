@@ -262,9 +262,7 @@ export default function App() {
             </div>
           </footer>
 
-          {/* Ask Vishwa AI Assistant Panel */}
-          <AIChat />
-
+      
         </motion.div>
       )}
     </div>
