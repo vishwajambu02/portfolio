@@ -8,7 +8,6 @@ import Skills from "./components/Skills";
 import Projects from "./components/Projects";
 import EducationCertifications from "./components/EducationCertifications";
 import ContactResume from "./components/ContactResume";
-import AIChat from "./components/AIChat";
 import { PERSONAL_INFO } from "./data";
 
 export default function App() {
