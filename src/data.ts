@@ -11,7 +11,7 @@ export const PERSONAL_INFO = {
   location: "Vadodara, Gujarat, India",
   github: "https://github.com/vishwajambu02",
   linkedin: "https://linkedin.com/in/vishwa-jambu-7a007039b",
-  about: "A passionate Computer Science & Engineering student at Parul University specializing in building high-performance full-stack web applications and AI-integrated platforms. Proficient in React, Node.js, Express, and modern database ecosystems, with a strong emphasis on interactive UI/UX, robust security protocols, and seamless user experiences."
+  about: "A passionate Computer Science & Engineering student specializing in building high-performance full-stack web applications and AI-integrated platforms. Proficient in React, Node.js, Express, and modern database ecosystems, with a strong emphasis on interactive UI/UX, robust security protocols, and seamless user experiences."
 };
 
 export const PROJECTS: Project[] = [
