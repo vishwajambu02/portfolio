@@ -89,19 +89,16 @@ export const EDUCATION: Education[] = [
     degree: "B.Tech — Computer Science & Engineering",
     institution: "Parul University, Vadodara",
     period: "2024 – 2028",
-    score: "CGPA: 7.42 / 10"
   },
   {
     degree: "Class XII (GSEB – NCERT)",
     institution: "G.N.F.C. Narmada Vidyalaya, Bharuch",
     period: "2024",
-    score: "Percentage: 66%"
   },
   {
     degree: "Class X (GSEB – NCERT)",
     institution: "G.N.F.C. Narmada Vidyalaya, Bharuch",
     period: "2022",
-    score: "Percentage: 80.33%"
   }
 ];
 
